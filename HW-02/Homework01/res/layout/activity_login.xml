@@ -1,0 +1,71 @@
+  <ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="#ffffff">
+		<!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              	android:layout_centerHorizontal="true"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip">
+                <!-- Logo Start-->
+                <ImageView 
+                    android:src="@drawable/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    />
+                <!-- Logo Ends -->
+         </LinearLayout>
+        <!--  Header Ends -->
+		<!-- Login Form -->
+        <LinearLayout
+          style="@style/LoginFormContainer"
+          android:orientation="vertical"
+          android:layout_below="@id/header">
+          <!--  Email Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/login_email"/>
+          <EditText android:id="@+id/user_email"
+              	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_background"/>
+          <!--  Password Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/login_password"/>
+          <EditText android:id="@+id/user_password"
+              	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="textPassword"
+                android:imeActionId="@+id/login"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_background"/>
+          <!-- Login button -->
+          <Button android:id="@+id/signin_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="@string/action_sign_in"
+                android:background="@drawable/login_button_background"/>
+           
+        </LinearLayout>
+        <!-- Login Form Ends -->
+  </RelativeLayout>
+</ScrollView>
