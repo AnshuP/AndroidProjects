@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="#999999"
+        android:paddingTop="5dp"
+        android:src="@android:drawable/ic_menu_gallery" />
+    
+    <Chronometer
+        android:id="@+id/stopWatch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    
+    <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="30dp">
+      
+      <Button
+            android:id="@+id/startAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start" 
+            android:textColor="#31698A"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@drawable/audio_start"
+            />
+
+      <Button
+            android:id="@+id/stopAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop" 
+            android:textColor="#31698A"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@drawable/audio_stop"
+            />
+      <Button
+            android:id="@+id/playAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@android:drawable/ic_media_play"
+            android:text="Play" 
+            android:textColor="#31698A"
+            />
+             
+  </LinearLayout>
+ 
+   <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="20dp">
+      
+      <Button
+            android:id="@+id/pickDateAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="#31698A"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"/>
+
+
+       <Button
+            android:id="@+id/pickTimeAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time" 
+            android:textColor="#31698A"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@android:drawable/ic_menu_recent_history"/>
+      
+  </LinearLayout>
+  <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp">
+      
+  <EditText 
+      android:id="@+id/notesAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textColorHint="#CCCCCC"
+        android:hint="Note"
+        android:textColor="#0066CC"
+        android:background="@android:drawable/editbox_background_normal"/>
+  </LinearLayout>
+  <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingTop="30dp">
+      
+      <Button
+            android:id="@+id/saveAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save" 
+            android:textColor="#111111"/>
+
+
+       <Button
+            android:id="@+id/cancelAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" 
+            android:textColor="#111111"/>
+      
+  </LinearLayout>
+ </LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab2menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+        <Button
+            android:id="@+id/takePicture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Take picture" 
+            android:background="@drawable/takepicture_button"
+            />
+        <Button
+            android:id="@+id/recordAudio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Record Voice" 
+            android:background="@drawable/recordaudio_button"
+            
+            />
+</LinearLayout>

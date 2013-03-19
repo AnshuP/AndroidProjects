@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Baby Book</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Baby Book</string>
+    <color name="text_color">#31D1F1</color>
+    <color name="white">#ffffff</color>
+
+</resources>

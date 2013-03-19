@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+   <ImageView
+        android:id="@+id/picture"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:background="#999999"
+        android:paddingTop="5dp"
+         />
+   
+  <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="30dp">
+      
+      <Button
+            android:id="@+id/pickCamera"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Camera" 
+            android:textColor="#31698A"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@android:drawable/ic_menu_camera"
+            />
+
+
+       <Button
+            android:id="@+id/pickGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gallery"
+            android:textColor="#31698A" 
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@android:drawable/ic_menu_gallery"/>
+      
+  </LinearLayout>
+ 
+   <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="20dp">
+      
+      <Button
+            android:id="@+id/pickDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="#31698A"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"/>
+
+
+       <Button
+            android:id="@+id/pickTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time" 
+            android:textColor="#31698A"
+            android:background="@drawable/login_button_background"
+            android:drawableLeft="@android:drawable/ic_menu_recent_history"/>
+      
+  </LinearLayout>
+  <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp">
+  	<EditText 
+      android:id="@+id/notePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textColorHint="#CCCCCC"
+        android:hint="Note"
+        android:textColor="#0066CC"
+        android:background="@android:drawable/editbox_background_normal"/>
+  </LinearLayout>
+  <LinearLayout 
+      	android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingTop="30dp">
+      
+      <Button
+            android:id="@+id/savePicture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textColor="#111111" 
+            />
+
+
+       <Button
+            android:id="@+id/cancelPicture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="#111111" 
+            />
+      
+  </LinearLayout>
+</LinearLayout>
+   

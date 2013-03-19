@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" 
+        android:gravity="center_horizontal">
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+    			<ImageButton
+        			android:id="@+id/calendarButton"
+        			android:layout_width="70dp"
+        			android:layout_height="100dp"
+        			android:layout_gravity="center"
+        			android:src="@drawable/menuitem_three" />
+
+    			<TextView
+        			android:id="@+id/textView1"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_gravity="center"
+        			android:text="Calendar" 
+        			android:textStyle="bold"/>
+    	</LinearLayout>
+    	<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+    
+        		<ImageButton
+        			android:id="@+id/allEventsButton"
+        			android:layout_width="70dp"
+        			android:layout_height="100dp"
+        			android:layout_gravity="center"
+        			android:src="@drawable/menuitem_one" />
+    			<TextView
+        			android:id="@+id/textView2"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_gravity="center"
+        			android:text="All Events"
+        			android:textStyle="bold" />
+        </LinearLayout>
+    </TableRow>
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="110dp">
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" 
+        android:paddingTop="40dp"
+        android:gravity="center_horizontal">
+    	<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+    
+    			<ImageButton
+        			android:id="@+id/themeButton"
+        			android:layout_width="70dp"
+        			android:layout_height="100dp"
+        			android:layout_gravity="center"
+        			android:src="@drawable/menuitem_four" />
+    			<TextView
+        			android:id="@+id/textView3"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_gravity="center"
+        			android:text="Themes"
+        			android:textStyle="bold" />
+    	</LinearLayout>
+    	<LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+    
+    <ImageButton
+        android:id="@+id/reminderButton"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/menuitem_two" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reminders" 
+        android:textStyle="bold" />
+    </LinearLayout>
+</TableRow>
+</TableLayout>
